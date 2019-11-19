@@ -2,8 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php require('templates/header.php') ?>
-
+    <?php require 'templates/header.php' ?>
     <section class="container grey-text">
         <h4 class="center">Add Pizza</h4>
         <form action="add-pizza.php" method="POST" class="white">
@@ -18,6 +17,5 @@
             </div>
         </form>
     </section>
-
-    <?php require('templates/footer.php') ?>
+    <?php require 'templates/footer.php'  ?>
 </html>

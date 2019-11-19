@@ -1,9 +1,6 @@
-<?php ?> 
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <?php require('templates/header.php') ?>
+    <?php require 'templates/header.php' ?>
 
-    <?php require('templates/footer.php') ?>
+    <?php require 'templates/footer.php' ?>
 </html>
