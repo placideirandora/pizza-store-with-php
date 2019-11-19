@@ -7,7 +7,7 @@
         <h4 class="center">Add Pizza</h4>
         <form action="add-pizza.php" method="POST" class="white">
             <label for="email">Email:</label>
-            <input type="email" name="email">
+            <input type="text" name="email">
             <label for="title">Title:</label>
             <input type="text" name="title">
             <label for="ingredients">Ingredients:</label>
