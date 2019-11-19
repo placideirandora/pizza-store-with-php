@@ -8,10 +8,13 @@
         <form action="add-pizza.php" method="POST" class="white">
             <label for="email">Email:</label>
             <input type="text" name="email">
+            <div class="red-text"><?php echo $errors['email']; ?></div>
             <label for="title">Title:</label>
             <input type="text" name="title">
+            <div class="red-text"><?php echo $errors['title']; ?></div>
             <label for="ingredients">Ingredients:</label>
             <input type="text" name="ingredients">
+            <div class="red-text"><?php echo $errors['ingredients']; ?></div>
             <div class="center">
                 <input type="submit" name="submit" value="submit" class="btn brand z-depth-0">
             </div>
