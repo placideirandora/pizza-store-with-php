@@ -7,5 +7,9 @@
     <title>Pizza Store</title>
 </head>
 <body class="grey lighten-4">
-    <nav class="white z-depth-0"></nav>
+    <nav class="white z-depth-0">
+        <div class="container">
+            <a href="#" class="brand-logo brand-text">Pizza Store</a>
+        </div>
+    </nav>
     
