@@ -6,4 +6,4 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Pizza Store</title>
 </head>
-<body>
+<body class="grey lighten-4">
