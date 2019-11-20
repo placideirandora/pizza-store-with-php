@@ -12,6 +12,7 @@
             <h5>Ingredients:</h5>
             <p><?php echo htmlspecialchars($pizza['ingredients']); ?></p> 
         <?php else: ?>
+            <h5>No such pizza exists!</h5>
         <?php endif ?>
     </div>
     <?php require 'templates/footer.php' ?>
