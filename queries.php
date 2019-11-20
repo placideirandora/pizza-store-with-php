@@ -1,5 +1,5 @@
 <?php 
-    $retrievePizzas = 'SELECT id, title, ingredients FROM pizzas ORDER_BY created_at';
+    $retrievePizzas = 'SELECT id, title, ingredients FROM pizzas ORDER BY created_at';
 
     $result = mysqli_query($conn, $retrievePizzas);
 
