@@ -1,4 +1,6 @@
 <?php
+    require 'helpers/connection.php';
+
     $email = $title = $ingredients = '';
     $errors = array('email' => '', 'title' => '', 'ingredients' => '');
 
