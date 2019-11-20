@@ -4,7 +4,7 @@
 <html lang="en">
     <?php require 'templates/header.php' ?>
     <section class="container grey-text">
-        <h4 class="center">Add Pizza</h4>
+        <h4 class="center">ADD PIZZA</h4>
         <form action="add-pizza.php" method="POST" class="white">
             <label for="email">Email:</label>
             <input type="text" name="email" value="<?php echo htmlspecialchars($email) ?>">
