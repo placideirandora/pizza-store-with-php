@@ -1,5 +1,4 @@
-<?php require 'helpers/connection.php' ?>
-<?php require 'helpers/queries.php' ?>
+<?php require 'actions/pizza-action.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
