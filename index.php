@@ -21,7 +21,7 @@
                             </ul>
                         </div>
                         <div class="card-action right-align">
-                            <a href="#" class="brand-text">More Info</a>
+                            <a href="pizza-detail.php?id=<?php echo htmlspecialchars($pizza['id']); ?>" class="brand-text">More Info</a>
                         </div>
                     </div> 
                 </div>
