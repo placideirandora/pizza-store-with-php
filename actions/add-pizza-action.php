@@ -36,6 +36,10 @@
         }
 
         if (!array_filter($errors)) {
+            $email = mysqli_real_escape_string($conn, $_POST['email']);
+            $title = mysqli_real_escape_string($conn, $_POST['title']);
+            $ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
+
             header('Location: index.php');
         }
     }
