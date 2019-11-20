@@ -1,4 +1,5 @@
 <?php require 'connection.php' ?>
+<?php require 'queries.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
