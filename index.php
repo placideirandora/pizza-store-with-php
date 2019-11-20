@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'templates/header.php' ?>
-    <h4 class="center grey-text">Pizzas!</h4>
+    <h4 class="center grey-text">PIZZAS!</h4>
     <div class="container">
         <div class="row">
             <?php foreach($pizzas as $pizza) { ?>
