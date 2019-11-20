@@ -8,8 +8,8 @@
     <div class="container center">
         <?php if($pizza): ?>
             <h4><?php echo htmlspecialchars($pizza['title']); ?></h4>
-            <p>Created by: <?php echo htmlspecialchars($pizza['email']); ?></p>
-            <p>Created At: <?php echo htmlspecialchars(date($pizza['created_at'])); ?></p>
+            <p><b>Created By:</b> <?php echo htmlspecialchars($pizza['email']); ?></p>
+            <p><b>Created At:</b> <?php echo htmlspecialchars(date($pizza['created_at'])); ?></p>
             <h5>Ingredients:</h5>
             <p><?php echo htmlspecialchars($pizza['ingredients']); ?></p> 
             <form action="pizza-detail.php" method="POST">
