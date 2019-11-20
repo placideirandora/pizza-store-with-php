@@ -1,4 +1,4 @@
-<?php require('actions/add-pizza-action.php') ?> 
+<?php require 'actions/add-pizza-action.php' ?> 
 
 <!DOCTYPE html>
 <html lang="en">
