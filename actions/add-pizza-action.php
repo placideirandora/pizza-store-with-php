@@ -11,8 +11,6 @@
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $errors['email'] = 'Email must be a valid email address';
             }
-
-            // echo htmlspecialchars($_POST['email']);
         }
 
         if (empty($_POST['title'])) {
@@ -23,8 +21,6 @@
             if (!preg_match('/^[a-zA-Z\s]+$/', $title)) {
                 $errors['title'] = 'Title must be letters and spaces only <br/>';
             }
-
-            // echo htmlspecialchars($_POST['title']);
         }
 
         if (empty($_POST['ingredients'])) {
@@ -35,8 +31,6 @@
             if (!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/', $ingredients)) {
                 $errors['ingredients'] = 'Ingredients must be a comma separated list <br/>';
             }
-
-            // echo htmlspecialchars($_POST['ingredients']);
         }
 
         if (!array_filter($errors)) {
