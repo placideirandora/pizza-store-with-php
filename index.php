@@ -1,5 +1,5 @@
-<?php require 'connection.php' ?>
-<?php require 'queries.php' ?>
+<?php require 'helpers/connection.php' ?>
+<?php require 'helpers/queries.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
