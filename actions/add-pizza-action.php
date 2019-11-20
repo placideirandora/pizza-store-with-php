@@ -38,5 +38,9 @@
 
             // echo htmlspecialchars($_POST['ingredients']);
         }
+
+        if (!array_filter($errors)) {
+            header('Location: index.php');
+        }
     }
 ?>
