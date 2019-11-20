@@ -14,9 +14,11 @@
                             <h6> 
                                 <?php echo htmlspecialchars($pizza['title']) ?> 
                             </h6>
-                            <div>
-                                <?php echo htmlspecialchars($pizza['ingredients']) ?> 
-                            </div>
+                            <ul>
+                                <?php foreach(explode(',', $pizza['ingredients']) as $ingredient) { ?> 
+                                    <li><?php echo htmlspecialchars($ingredient); ?></li>
+                                <?php } ?> 
+                            </ul>
                         </div>
                         <div class="card-action right-align">
                             <a href="#" class="brand-text">More Info</a>
