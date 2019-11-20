@@ -12,7 +12,7 @@
             <p><b>Created At:</b> <?php echo htmlspecialchars(date($pizza['created_at'])); ?></p>
             <h5>Ingredients:</h5>
             <p><?php echo htmlspecialchars($pizza['ingredients']); ?></p> 
-            <form action="pizza-detail.php" method="POST">
+            <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
                 <input type="hidden" name="pizza-id" value=<?php echo htmlspecialchars($pizza['id']); ?>>
                 <input type="submit" name="delete" value="Delete" class="btn brand z-depth-0">
             </form>
