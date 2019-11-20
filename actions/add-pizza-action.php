@@ -40,7 +40,13 @@
             $title = mysqli_real_escape_string($conn, $_POST['title']);
             $ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
 
-            header('Location: index.php');
+            $storePizza = "INSERT INTO pizzas(title, ingredients, email) VALUES('$title', '$ingredients', '$email')";
+
+            if(mysqli_query($conn, $storePizza)) {
+                header('Location: index.php');
+            } else {
+                echo 'database connection error: ' . mysqli_connect_error(); 
+            }
         }
     }
 ?>
