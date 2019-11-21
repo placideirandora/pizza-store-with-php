@@ -45,7 +45,7 @@
             if(mysqli_query($conn, $storePizza)) {
                 header('Location: index.php');
             } else {
-                echo 'the pizza could not be stored. error: ' . mysqli_connect_error(); 
+                echo 'the pizza could not be stored. error: ' . mysqli_error($conn); 
             }
         }
     }
