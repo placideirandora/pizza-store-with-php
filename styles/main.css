@@ -12,3 +12,7 @@ form {
     margin: 20px auto;
     padding: 20px;
 }
+
+textarea {
+    height: 10rem;
+}
