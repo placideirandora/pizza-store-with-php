@@ -22,9 +22,10 @@
             <a href="index.php" class="brand-logo brand-text">Pizza Store</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
                 <li><a href="#" class="btn brand z-depth-0">Menu</a></li>
-                <li><a href="#" class="btn brand z-depth-0">About Us</a></li>
                 <li><a href="#" class="btn brand z-depth-0">Place Order</a></li>
-                <li><a href="add-pizza.php" class="btn brand z-depth-0">Add Pizza</a></li>
+                <li><a href="#" class="btn brand z-depth-0">Contact Us</a></li>
+                <li><a href="sign-in.php" class="btn brand z-depth-0">SignIn/SignUp</a></li>
+                <!-- <li><a href="add-pizza.php" class="btn brand z-depth-0">Add Pizza</a></li> -->
             </ul>
         </div>
     </nav>
