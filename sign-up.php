@@ -1,3 +1,5 @@
+<?php require 'actions/sign-up-action.php' ?> 
+
 <!DOCTYPE html>
 <html lang="en">
     <?php require 'templates/header.php' ?>
@@ -5,15 +7,20 @@
             <h4 class="center">SIGN UP</h4>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" className="white">
                 <label htmlFor="firstname">First Name</label>
-                <input type="text" name="firstname" /> 
+                <input type="text" name="firstname" value="<?php echo htmlspecialchars($firstname) ?>" /> 
+                <div class="red-text"><?php echo $errors['firstname']; ?></div>
                 <label htmlFor="lastname">Last Name</label>
-                <input type="text" name="lastname" />   
+                <input type="text" name="lastname" value="<?php echo htmlspecialchars($lastname) ?>" /> 
+                <div class="red-text"><?php echo $errors['lastname']; ?></div>  
                 <label htmlFor="email">Email</label>
-                <input type="text" name="email" />       
+                <input type="text" name="email" value="<?php echo htmlspecialchars($email) ?>" /> 
+                <div class="red-text"><?php echo $errors['email']; ?></div>      
                 <label htmlFor="password">Password</label>
-                <input type="password" name="password" />
+                <input type="password" name="password" value="<?php echo htmlspecialchars($password) ?>" />
+                <div class="red-text"><?php echo $errors['password']; ?></div>
                 <label htmlFor="password-confirm">Confirm Password</label>
-                <input type="password" name="password-confirm" />
+                <input type="password" name="password-confirm" value="<?php echo htmlspecialchars($passwordConfirm) ?>" />
+                <div class="red-text"><?php echo $errors['password-confirm']; ?></div>
                 <p class="center">Already have an account? <a href="sign-in.php" class="grey-text">SIGNIN</a></p>
                 <br>
                 <div class="center">
