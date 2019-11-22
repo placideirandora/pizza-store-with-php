@@ -3,6 +3,7 @@
 
     $firstname = $lastname = $email = $password = $passwordConfirm = '';
     $errors = array('firstname' => '', 'lastname' => '', 'email' => '', 'password' => '', 'password-confirm' => '');
+    $response = array('result' => '', 'values' => '');
 
     if(isset($_POST['submit'])) {
         if (empty($_POST['firstname'])) {
@@ -76,9 +77,11 @@
                 $registerUser = "INSERT INTO users(firstname, lastname, email, password) VALUES('$firstname', '$lastname', '$email', '$hash')";
 
                 if(mysqli_query($conn, $registerUser)) {
-                    header('Location: index.php');
+                    $response['result'] = 'Access granted. Registered.';
+                    $response['values'] = 'green-text center';
                 } else {
-                    echo 'user registration failed. error: ' . mysqli_error($conn); 
+                    $response['result'] = 'Access denied. Error: ' . mysqli_error($conn);
+                    $response['values'] = 'red-text center';
                 }
             }
         }
