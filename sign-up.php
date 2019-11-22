@@ -5,6 +5,9 @@
     <?php require 'templates/header.php' ?>
     <section class="container grey-text">
             <h4 class="center">SIGN UP</h4>
+            <div class="<?php echo htmlspecialchars($response['values']); ?>">
+            <?php echo htmlspecialchars($response['result']); ?>
+            </div>
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" className="white">
                 <label htmlFor="firstname">First Name</label>
                 <input type="text" name="firstname" value="<?php echo htmlspecialchars($firstname) ?>" /> 
