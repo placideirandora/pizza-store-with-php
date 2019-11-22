@@ -52,7 +52,7 @@
             $passwordConfirm = $_POST['password-confirm'];
 
             if (!preg_match('/^\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$/', $passwordConfirm)) {
-                $errors['password-confirm'] = 'Password must not be less that 8 characters and must contain lowercase, uppercase, characters, and numbers <br/> <br/>';
+                $errors['password-confirm'] = 'Password must not be less than 8 characters, must contain at least one uppercase letter (ex: A, B, etc.), one lowercase letter (ex: a, b, etc.), one special character (ex: $, #, @, !,%,^,&,*, etc.), and one digit number (ex: 0, 1, 2, 3, etc.) <br/> <br/>';
             } else if ($passwordConfirm != $password) {
                 $errors['password-confirm'] = "Password Confirmation does not match Password";
             }
