@@ -63,14 +63,23 @@
             $email = mysqli_real_escape_string($conn, $_POST['email']);
             $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-            $hash = password_hash($password, PASSWORD_DEFAULT);
+            $uniqueEmail = "SELECT * FROM users WHERE email = '$email'";
 
-            $registerUser = "INSERT INTO users(firstname, lastname, email, password) VALUES('$firstname', '$lastname', '$email', '$hash')";
+            $result = mysqli_query($conn, $uniqueEmail);
+            $count = mysqli_num_rows($result);
 
-            if(mysqli_query($conn, $registerUser)) {
-                header('Location: index.php');
+            if ($count == 1) {
+                $errors['email'] = 'This email is already taken. Please, try another one. <br/> <br/>';
             } else {
-                echo 'user registration failed. error: ' . mysqli_error($conn); 
+                $hash = password_hash($password, PASSWORD_DEFAULT);
+
+                $registerUser = "INSERT INTO users(firstname, lastname, email, password) VALUES('$firstname', '$lastname', '$email', '$hash')";
+
+                if(mysqli_query($conn, $registerUser)) {
+                    header('Location: index.php');
+                } else {
+                    echo 'user registration failed. error: ' . mysqli_error($conn); 
+                }
             }
         }
     }
