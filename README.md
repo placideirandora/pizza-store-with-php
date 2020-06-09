@@ -6,7 +6,7 @@ A full-stack web application for online pizza ordering and delivery.
 ### Clone The Project
 
 ```
-$ git clone https://github.com/placideirandora/pizza-store-with-php
+$ git clone https://github.com/placiderapson/pizza-store-with-php
 ```
 
 ### Install XAMPP
